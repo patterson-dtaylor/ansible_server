@@ -8,8 +8,9 @@ sudo apt install software-properties-common
 sudo add-apt-repository --yes --update ppa:ansible/ansible
 sudo apt install ansible
 
-# Setting Ansible config EV
+# Setting Ansible configurations
 export ANSIBLE_CONFIG=~/home/ansible/ansible_server/ansible.cfg
+
 
 echo "Ansible Version"
 sudo ansible --version
