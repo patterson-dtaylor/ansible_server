@@ -4,5 +4,7 @@
       shell: ip -4 -o a | cut -d ' ' -f 2,7 | cut -d '/' -f 1 | sed '1d'
       register: ip_result
 
-    - degbug:
-        msg: "Host interface and IP are: {{ ip_result }}"
+    - name: Display interface and IP of host
+      debug:
+        msg:
+        - "Host interface and IP are: {{ ip_result }}"
