@@ -2,10 +2,10 @@
 192.168.1.238 ansible_user=taylor
 
 [cpa3]
-192.168.1.25 ansible_user=ubuntu
+sktcust100 ansible_host=192.168.1.25 ansible_user=ubuntu
 
 [cpa4]
-192.168.1.185 ansible_user=skout
+sktcust101 ansible_host=192.168.1.185 ansible_user=skout
 
 [all_cpa:children]
 cpa3
