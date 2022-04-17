@@ -7,4 +7,4 @@
 
     - name: Display interface and IP of host
       debug:
-        msg: "Host interface and IP are: {{ ip_result }}"
+        msg: "Host interface and IP are: {{ ip_result.stdout }}"
